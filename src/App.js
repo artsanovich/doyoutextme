@@ -1,8 +1,8 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import AppRouter from './components/AppRouter';
-import Loader from './components/Loader';
-import Navbar from './components/Navbar';
+import AppRouter from './components/AppRouter/AppRouter';
+import Loader from './components/Loader/Loader';
+import Navbar from './components/Navbar/Navbar';
 import { useContext } from "react";
 import { Context } from ".";
 import firebase from "firebase/compat/app";

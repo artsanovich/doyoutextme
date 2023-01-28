@@ -1,0 +1,21 @@
+.navbar {
+    padding: 15px 10px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 30px;
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btnGroup {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+
+    &__title {
+        line-height: 0;
+    }
+}

@@ -1,0 +1,11 @@
+.login {
+    height: calc(100vh - 104px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapper {
+        padding: 80px 130px;
+        border: 1px dotted #ccc;
+    }
+}

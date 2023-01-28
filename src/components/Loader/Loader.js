@@ -1,5 +1,5 @@
 import { Box, Button, Container, Grid } from "@material-ui/core";
-import '../App.css'
+import classes from './Loader.module.css'
 
 const Loader = () => {
 
@@ -14,7 +14,7 @@ const Loader = () => {
                         container
                         alignItems={'center'}
                         direction={'column'}>
-                            <div className="lds-hourglass"></div>
+                            <div className={classes.lds_hourglass}></div>
                 </Grid>
             </Grid>
         </Container>
