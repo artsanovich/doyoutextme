@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Geostar Fill', sans-serif;
+  color: #333;
+}
+
+.btn {
+  font-family: 'Arbutus', sans-serif;
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  border: 1px solid #333;
+}
+
+.disabled {
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .btn {
+    font-family: 'Arbutus', sans-serif;
+    display: inline-block;
+    background: var(--light-color);
+    color: #333;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+  }  
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-family: 'Arbutus', sans-serif;
+    display: inline-block;
+    background: var(--light-color);
+    color: #333;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.7rem;
+    border: 1px solid #333;
+  }  
+}

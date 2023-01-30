@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 20px;
         
     &__wrapper {
         display: flex;
@@ -12,7 +13,7 @@
     }
 
     &__inner {
-        padding: 20px;
+        padding: 20px 20px 15px 20px;
         width: 100%;
         border: 1px solid #333;
         height: calc(100vh - 180px);
@@ -28,9 +29,9 @@
     &__message {
 
         &_author {
-            margin-bottom: 5px;
             font-weight: 800;
             font-family: 'Podkova', sans-serif;
+            font-size: 14px;
         }
 
         &_text {
@@ -38,23 +39,40 @@
         }
 
         &_own {
+            position: relative;
             max-width: 600px;
             word-wrap: break-word;
             border: 1px solid #333;
             margin-left: auto;
-            padding: 10px;
+            padding: 5px 8px 12px;
             margin-bottom: 5px;
             width: fit-content;
+
+            &_date {
+                position: absolute;
+                bottom: 0;
+                right: 2px;
+                font-family: 'Podkova', sans-serif;
+                font-size: 12px;
+            }
         }
 
         &_foreign {
-            max-width: 500px;
+            position: relative;
+            max-width: 600px;
             word-wrap: break-word;
             border: 1px dashed #333;
-            margin-left: 10px;
-            padding: 10px;
+            padding: 5px 8px 12px;
             margin-bottom: 5px;
             width: fit-content;
+
+            &_date {
+                position: absolute;
+                bottom: 0;
+                right: 2px;
+                font-family: 'Podkova', sans-serif;
+                font-size: 12px;
+            }
         }
     }
 
@@ -66,3 +84,113 @@
         font-family: 'Podkova', sans-serif;
     }
 }
+
+@media (max-width: 700px) {
+
+    .chat {
+        padding: 0px 20px;
+
+        &__inner {
+            height: calc(100vh - 170px);
+            padding: 12px 12px 7px 12px;
+        }
+
+        &__message {
+    
+            &_own {
+                max-width: 400px;
+                padding: 3px 7px 10px;
+    
+                &_date {
+                    font-size: 12px;
+                }
+            }
+    
+            &_foreign {
+                max-width: 400px;
+                padding: 3px 7px 10px;
+    
+                &_date {
+                    font-size: 12px;
+                }
+            }
+        }
+    
+        &__input {
+            width: 100%;
+            border: 1px solid #333;
+            border-radius: 0;
+            margin-right: 10px;
+            font-family: 'Podkova', sans-serif;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .chat {
+    
+        &__inner {
+            height: calc(100vh - 160px);
+            padding: 10px 10px 7px 10px;
+        }
+    
+        &__message {
+    
+            font-size: 14px;
+    
+            &_author {
+                font-size: 12px;
+            }
+    
+            &_text {
+                font-size: 14px;
+            }
+    
+            &_own {
+                max-width: 300px;
+                padding: 3px 5px 8px;
+                margin-bottom: 3px;
+    
+                &_date {
+                    right: 1px;
+                    font-size: 10px;
+                }
+            }
+    
+            &_foreign {
+                max-width: 300px;
+                padding: 3px 5px 8px;
+                margin-bottom: 3px;
+    
+                &_date {
+                    right: 1px;
+                    font-size: 10px;
+                }
+            }
+        }
+    
+        &__input {
+            width: 100%;
+            border: 1px solid #333;
+            border-radius: 0;
+            margin-right: 10px;
+            font-family: 'Podkova', sans-serif;
+        }
+    }
+    
+}
+
+@media (max-width: 374px) {
+    .chat {
+        &__message {
+            &_own {
+                max-width: 250px;
+            }
+    
+            &_foreign {
+                max-width: 250px;
+            }
+        }
+    }
+}
+    

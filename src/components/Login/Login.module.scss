@@ -9,3 +9,13 @@
         border: 1px dotted #ccc;
     }
 }
+
+@media (max-width: 500px) {
+
+    .login {
+
+        &__wrapper {
+            padding: 50px 75px;
+        }
+}
+}

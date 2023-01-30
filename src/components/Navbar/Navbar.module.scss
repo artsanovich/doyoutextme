@@ -19,3 +19,41 @@
         line-height: 0;
     }
 }
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 10px 10px;
+        margin-bottom: 20px;
+
+        &__title {
+            font-size: 26px;
+        }
+
+        &__btnGroup {
+            top: 6px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .navbar {
+    padding: 5px 10px 5px 20px;
+    margin-bottom: 10px;
+
+    &__wrapper {
+        justify-content: flex-start;
+    }
+
+    &__btnGroup {
+        position: absolute;
+        right: 10px;
+        top: 4px;
+    }
+
+    &__title {
+        font-size: 22px;
+    }
+    }
+}

@@ -1,23 +1,24 @@
 import { Box, Button, Container, Grid } from "@material-ui/core";
-import classes from './Loader.module.css'
+import Typewriter from 'typewriter-effect';
+import classes from './Loader.module.scss'
 
 const Loader = () => {
 
     return (
-        <Container>
-            <Grid container 
-            style={{height: window.innerHeight - 50}}
-            alignItems={'center'}
-            justifyContent={'center'}
-            >
-                <Grid
-                        container
-                        alignItems={'center'}
-                        direction={'column'}>
-                            <div className={classes.lds_hourglass}></div>
-                </Grid>
-            </Grid>
-        </Container>
+        <div className={classes.loader}>
+            <div className={classes.loader__wrapper}>
+                <Typewriter
+                    options={{
+                        strings: ['doYOUtextME?...'],
+                        autoStart: true,
+                        delay: 0,
+                        deleteSpeed: 0,
+                        pauseFor: 500,
+                        loop: true,
+                        }}
+                />
+            </div>
+        </div>
     )
 }
 
